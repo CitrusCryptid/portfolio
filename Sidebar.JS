@@ -27,6 +27,8 @@
         { label: 'Gibbon Quiz', href: '/gibbon-quiz/' },
         { label: 'Drag & Drop - OG', href: '/drag-drop/' },
         { label: 'Drag & Drop - AI Version', href: '/drag-ai/' },
+        { label: 'Claude Code Screencast', href: '/Claude%20Code%20Screencast/' },
+        { label: 'Gibbons & Snoop Educational Video', href: '/gibbons-and-snoop/' },
         { label: 'Muscle Trainer Game', href: 'https://anatomy.bfmediasolutions.com' },
         ]
     };
