@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="A short educational screencast introducing Claude Code, Anthropic’s AI coding assistant.">
+  <title>Claude Code | Screencast</title>
+  <style>
+    :root { color-scheme: dark; --bg:#111210; --panel:#1b1c19; --ink:#f5f1e9; --muted:#b7b2a8; --accent:#d99769; --line:#393831; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(ellipse at 50% -25%, #393028 0, transparent 55%),var(--bg); color:var(--ink); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(100% - 36px, 1040px); margin:0 auto; padding:clamp(40px,8vw,92px) 0 48px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:700; }
+    h1 { font-size:clamp(2.2rem,6vw,4.3rem); line-height:1.04; letter-spacing:-.045em; margin:.6rem 0 1rem; }
+    .intro { color:var(--muted); font-size:clamp(1rem,2vw,1.18rem); max-width:700px; margin:0 0 30px; }
+    .player { padding:12px; background:linear-gradient(145deg,#24241f,#171815); border:1px solid var(--line); border-radius:18px; box-shadow:0 24px 70px #0008; }
+    video { display:block; width:100%; aspect-ratio:16/9; background:#080908; border-radius:10px; }
+    .meta { display:flex; flex-wrap:wrap; gap:10px 24px; align-items:center; margin:16px 4px 5px; color:var(--muted); font-size:.92rem; }
+    .meta span::before { content:""; display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--accent); margin:0 9px 1px 0; }
+    .about { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:30px; }
+    .about section { border-top:1px solid var(--line); padding:17px 0; }
+    h2 { font-size:1rem; margin:0 0 6px; }
+    .about p { margin:0; color:var(--muted); font-size:.94rem; }
+    footer { margin-top:30px; color:#8f8b82; font-size:.8rem; }
+    @media(max-width:620px) { main{width:min(100% - 24px,1040px);padding-top:42px}.player{padding:7px;border-radius:13px}.about{grid-template-columns:1fr;gap:4px} }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Educational screencast · 2 minutes</p>
+    <h1>Meet Claude Code</h1>
+    <p class="intro">A quick look at how Anthropic’s AI coding assistant fits into a developer’s workflow, what learners can gain from it, and why human review still matters.</p>
+
+    <div class="player">
+      <video controls playsinline preload="metadata" aria-label="Screencast introducing Claude Code">
+        <source src="Claude-Code-Screencast.mp4" type="video/mp4">
+        Your browser does not support MP4 video playback. <a href="Claude-Code-Screencast.mp4">Open or download the video.</a>
+      </video>
+      <div class="meta"><span>Runtime: 2:04</span><span>Narration and on-screen captions</span></div>
+    </div>
+
+    <div class="about">
+      <section><h2>What you’ll see</h2><p>Claude Code in the VS Code interface, with examples of code context, prompts, and reviewing proposed edits.</p></section>
+      <section><h2>Learning perspective</h2><p>How AI coding support can help learners explore code and debugging while keeping verification and independent thinking in the loop.</p></section>
+    </div>
+    <footer>Claude Code interface imagery is from Anthropic’s official documentation.</footer>
+  </main>
+</body>
+</html>
