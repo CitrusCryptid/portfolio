@@ -1,0 +1,157 @@
+.animation-page {
+  max-width: 1120px;
+  margin: 20px auto 75px;
+  padding: clamp(14px, 3vw, 32px);
+}
+
+.video-player {
+  margin: 0 auto 28px;
+  padding: 10px;
+  border: 1px solid var(--jet, #3c3c3c);
+  border-radius: 16px;
+  background: var(--bg-gradient-jet, #252526);
+}
+
+.video-player video {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  border-radius: 10px;
+  background: #000;
+}
+
+.animation-header {
+  padding: clamp(20px, 4vw, 34px);
+  border: 1px solid var(--jet, #3c3c3c);
+  border-radius: 18px;
+  background: linear-gradient(140deg, #29292b, #1e1e1e 75%);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--vegas-gold, #4fc1ff);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.animation-header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.lead,
+.section-intro {
+  max-width: 850px;
+  color: var(--light-gray, #ccc);
+  line-height: 1.75;
+}
+
+.lead { margin: 0; font-size: 1.05rem; }
+
+.video-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.video-facts span {
+  padding: 7px 12px;
+  border: 1px solid var(--jet, #3c3c3c);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .035);
+  color: var(--light-gray, #ccc);
+  font-size: .82rem;
+}
+
+.content-section { margin-top: clamp(38px, 6vw, 64px); }
+.section-heading { margin-bottom: 18px; }
+.section-heading h2 { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); }
+.section-intro { margin: 10px 0 0; }
+
+.content-card,
+.prompt-card,
+.script-list,
+.storyboard-list,
+.reference-list {
+  border: 1px solid var(--jet, #3c3c3c);
+  border-radius: 16px;
+  background: var(--bg-gradient-jet, linear-gradient(135deg, #29292b, #1c1c1d));
+  color: var(--light-gray, #ccc);
+}
+
+.content-card { padding: clamp(18px, 3vw, 30px); }
+.content-card p { margin: 0; line-height: 1.8; }
+.content-card p + p { margin-top: 16px; }
+
+.prompt-card {
+  margin: 0;
+  padding: clamp(18px, 3vw, 30px);
+  border-left: 3px solid var(--orange-yellow-crayola, #007acc);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.8;
+}
+
+.after-prompt {
+  max-width: 930px;
+  margin: 16px 0 0;
+  color: var(--light-gray, #ccc);
+  line-height: 1.8;
+}
+
+.script-list,
+.storyboard-list,
+.reference-list {
+  margin: 0;
+  padding: clamp(18px, 3vw, 30px) clamp(22px, 4vw, 42px);
+}
+
+.script-list li { padding: 12px 0; }
+.script-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
+.script-list time { display: block; color: var(--vegas-gold, #4fc1ff); font-weight: 600; font-size: .9rem; }
+.script-list span { display: block; margin-top: 4px; line-height: 1.65; }
+
+.storyboard-figure {
+  overflow: hidden;
+  margin: 0 0 16px;
+  border: 1px solid var(--jet, #3c3c3c);
+  border-radius: 16px;
+  background: #061426;
+}
+
+.storyboard-figure img { display: block; width: 100%; }
+.storyboard-figure figcaption { padding: 11px 16px; color: var(--light-gray, #ccc); font-size: .85rem; }
+.storyboard-list li { padding: 11px 0; line-height: 1.75; }
+.storyboard-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
+.storyboard-list strong { color: var(--white2, #d4d4d4); }
+
+.accuracy-notes { border-left: 3px solid var(--orange-yellow-crayola, #007acc); }
+.essay-copy p + p { margin-top: 18px; }
+
+.reference-list li { padding: 12px 0; line-height: 1.75; overflow-wrap: anywhere; }
+.reference-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
+.reference-list a { color: var(--vegas-gold, #4fc1ff); text-underline-offset: 3px; }
+
+.original-files {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--jet, #3c3c3c);
+}
+
+.original-files h2 { width: 100%; margin: 0; font-size: 1.1rem; }
+.original-files a { color: var(--vegas-gold, #4fc1ff); text-underline-offset: 3px; }
+
+@media (max-width: 600px) {
+  .animation-page { margin-top: 8px; padding: 8px; }
+  .video-player { padding: 6px; border-radius: 12px; }
+  .animation-header { padding: 20px; }
+  .script-list, .storyboard-list, .reference-list { padding: 16px 24px; }
+}
