@@ -16,6 +16,43 @@
 
 .website-copy p + p { margin-top: 16px; }
 
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.color-palette li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--light-gray, #ccc);
+  font-size: .84rem;
+}
+
+.color-chip {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 4px;
+}
+
+.color-background { background: #1e1e1e; }
+.color-panel { background: #252526; }
+.color-border { background: #3c3c3c; }
+.color-accent { background: #007acc; }
+.color-highlight { background: #4fc1ff; }
+
+.color-palette code {
+  color: var(--white2, #d4d4d4);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .78rem;
+}
+
 .website-section {
   margin-top: 36px;
   padding-top: 24px;
