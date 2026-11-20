@@ -1,0 +1,40 @@
+.gibbons-page {
+  max-width: 1100px;
+  margin: 20px auto 75px;
+  padding: clamp(12px, 2vw, 22px);
+}
+
+.video-player {
+  margin: 0 auto 20px;
+  padding: 10px;
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+}
+
+.video-player video {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  background: #000;
+  border-radius: 10px;
+}
+
+.assignment-text {
+  margin: 0;
+  padding: clamp(16px, 3vw, 32px);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+  background: var(--bg-gradient-jet);
+  color: var(--light-gray);
+  font: inherit;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .gibbons-page { margin-top: 8px; padding: 8px; }
+  .video-player { padding: 6px; border-radius: 12px; }
+  .assignment-text { padding: 15px; }
+}
