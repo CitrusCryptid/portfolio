@@ -23,7 +23,7 @@
         subtitle: 'EdTech',
         links: [
         { label: 'Home', href: 'https://bfinkelsteinedu.carrd.co/', newTab: true },
-        { label: 'Landing', href: 'https://bfmediasolutions.com' },
+        { label: 'Landing', href: '/' },
         { label: 'Image projects', href: '/eme6208-project-1/' },
         { label: 'Gibbon Quiz', href: '/gibbon-quiz/' },
         { label: 'Drag & Drop - OG', href: '/drag-drop/' },
@@ -218,12 +218,20 @@
         return div.innerHTML;
     }
 
+    function resolveHref(href) {
+        if (href.charAt(0) !== '/') return href;
+        var siteRoot = script && script.src
+            ? new URL('.', script.src).href
+            : new URL('.', window.location.href).href;
+        return new URL(href.slice(1), siteRoot).href;
+    }
+
     function buildMarkup() {
         var items = CONFIG.links.map(function (l) {
         var external = l.newTab ? ' target="_blank" rel="noopener noreferrer"' : '';
         return (
             '<li class="nav-item">' +
-            '<a href="' + escapeHTML(l.href) + '" class="nav-link"' + external + '>' +
+            '<a href="' + escapeHTML(resolveHref(l.href)) + '" class="nav-link"' + external + '>' +
                 '<span>' + escapeHTML(l.label) + '</span>' +
             '</a>' +
             '</li>'
