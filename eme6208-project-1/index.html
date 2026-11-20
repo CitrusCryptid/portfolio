@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio presentation of EME6208 Project 1, featuring a personal logo and handmade and AI-generated book covers.">
+  <meta name="description" content="EME6208 Project 1: a portfolio logo, a handmade orangutan book cover, an AI-generated cover, and the designer's reflection.">
   <title>EME6208 Project 1 | Visual Design</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../landing.css">
@@ -13,16 +13,58 @@
 <body>
   <main>
     <article class="active project-page">
-      <header class="project-header">
-        <p class="eyebrow">EME6208 · Project 1</p>
-        <h1>Visual Design: Logo and Book Covers</h1>
-        <p>This project brings together a personal media portfolio logo, a handmade book cover built from original photography, and an AI-generated interpretation of the cover concept.</p>
+      <header class="project-hero">
+        <img class="portfolio-logo" src="cryptid-media-logo.png" alt="Cryptid Media logo in yellow lettering with a red glow and creature-inspired graphic">
+        <div class="hero-copy">
+          <p class="eyebrow">EME6208 · Project 1</p>
+          <h1>Visual Design</h1>
+          <p>One portfolio identity and two approaches to a great apes book cover: a handmade composition using original photography, and an AI-generated interpretation.</p>
+        </div>
       </header>
 
-      <section class="document-viewer" aria-label="Project 1 document">
-        <iframe src="EME6208-P1.pdf" title="EME6208 Project 1: logo and book cover designs with written reflection"></iframe>
-        <p class="document-fallback">If the document does not display in your browser, <a href="EME6208-P1.pdf">open or download the PDF</a>.</p>
+      <section class="cover-showcase" aria-labelledby="covers-title">
+        <div class="section-heading">
+          <p class="eyebrow">Cover study</p>
+          <h2 id="covers-title">Two ways to picture the great apes</h2>
+        </div>
+        <div class="cover-grid">
+          <figure class="cover-card">
+            <img src="handmade-orangutan-cover.png" alt="Handmade cover for Among the Great Apes, showing two orangutans in a forest setting">
+            <figcaption><span>Handmade</span><span>Created in Canva</span></figcaption>
+          </figure>
+          <figure class="cover-card">
+            <img src="copilot-orangutan-cover.png" alt="AI-generated cover titled Kindred in the Canopy, showing an orangutan against a jungle landscape">
+            <figcaption><span>AI-generated</span><span>Created in Microsoft Copilot</span></figcaption>
+          </figure>
+        </div>
       </section>
+
+      <section class="reflection" aria-labelledby="reflection-title">
+        <div class="section-heading">
+          <p class="eyebrow">Design notes</p>
+          <h2 id="reflection-title">The process behind the work</h2>
+        </div>
+
+        <div class="reflection-block">
+          <h3>Portfolio logo</h3>
+          <p>For my logo, I opted to build one for my media portfolio as a whole. On the side, I am a photographer, I also do some videography projects. As far as the branding, I've used “cryptid” for a long time, with the alien/creature motif representing that.</p>
+          <p>In order to capture this eerie, nostalgic vibe, I paired glowing red background elements with desaturated yellow text framed in sharp black outlines. This high-contrast combination mimics the electric intensity of early internet cryptid sighting hoaxes and camera flashes, ensuring the logo jumps forward with an unmistakable, creature-in-the-night presence while remaining readable.</p>
+          <p>This design came together by combining the strengths of Affinity and Canva. I started in Affinity by layering a black alien graphic over a black oval. By merging them together on a transparent layer, I created a single unified graphic that I exported as an SVG file. From there, I moved into Canva to apply the colors and add the glowing light effect to the eyes. I also used Canva’s font features to build out a spooky, horror-themed typeface for the text. By focusing on transparency and clean outlines, I made a logo that functions well on its own across any light or dark background.</p>
+        </div>
+
+        <div class="reflection-block">
+          <h3>Handmade book cover</h3>
+          <p>For my handmade book cover, I chose to use my own photography to highlight my passion for primates and show how closely they mirror human behavior. Apes have been my favorite animals for years, especially gibbons, because of their playful energy. Orangutans, on the other hand, perfectly demonstrate nature's intelligence. They are the ultimate example of observation-based learning, often watching humans use tools and then trying it themselves—like a wild female orangutan in Borneo who famously climbed onto a porch and began using a handsaw. I selected Paul Raffaele’s non-fiction book, "Among the Great Apes: Adventures on the Trail of Our Closest Relatives" (Raffaele, 2010), because it is a fascinating chronicle of his global travels to observe these animals.</p>
+          <p>To build the cover, I combined the strengths of Affinity and Canva. I started in Affinity by removing the backgrounds of my two orangutan photos, making sure to keep the original wooden structures intact to blend smoothly with a jungle backdrop. From there, I moved into Canva, where I imported both isolated images and positioned them to create the illusion of a single, unified scene.</p>
+        </div>
+
+        <div class="reflection-block">
+          <h3>AI-generated cover</h3>
+          <p>For the AI version of the cover, I wanted to see how Microsoft Copilot would interpret the concept compared to my manual design. I gave the tool a straightforward prompt: “Generate a book cover for a nature book about great apes and their societies/life. Make it a cohesive image with at least one photo of an orangutan or gibbon in the foreground over a somewhat generic jungle backdrop. Create a catchy title and subtitle that represent this focus.” The final result completely caught me off guard because the layout and composition turned out surprisingly well.</p>
+        </div>
+      </section>
+
+      <p class="source-download"><a href="EME6208-P1.pdf">Download the original Project 1 document (PDF)</a></p>
     </article>
   </main>
 </body>
