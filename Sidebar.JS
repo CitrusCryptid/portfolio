@@ -29,6 +29,7 @@
         { label: 'Drag & Drop - AI Version', href: '/drag-ai/' },
         { label: 'Claude Code Screencast', href: '/Claude%20Code%20Screencast/' },
         { label: 'Gibbons & Snoop Educational Video', href: '/gibbons-and-snoop/' },
+        { label: 'EME6208 Project 1', href: '/eme6208-project-1/' },
         { label: 'Muscle Trainer Game', href: 'https://anatomy.bfmediasolutions.com' },
         ]
     };
