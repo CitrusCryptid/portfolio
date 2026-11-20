@@ -24,12 +24,12 @@
         links: [
         { label: 'Home', href: 'https://bfinkelsteinedu.carrd.co/', newTab: true },
         { label: 'Landing', href: 'https://bfmediasolutions.com' },
+        { label: 'Image projects', href: '/eme6208-project-1/' },
         { label: 'Gibbon Quiz', href: '/gibbon-quiz/' },
         { label: 'Drag & Drop - OG', href: '/drag-drop/' },
         { label: 'Drag & Drop - AI Version', href: '/drag-ai/' },
-        { label: 'Claude Code Screencast', href: '/Claude%20Code%20Screencast/' },
         { label: 'Gibbons & Snoop Educational Video', href: '/gibbons-and-snoop/' },
-        { label: 'EME6208 Project 1', href: '/eme6208-project-1/' },
+        { label: 'Claude Code Screencast', href: '/Claude%20Code%20Screencast/' },
         { label: 'Muscle Trainer Game', href: 'https://anatomy.bfmediasolutions.com' },
         ]
     };
