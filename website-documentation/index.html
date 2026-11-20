@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A look at how this portfolio website was put together, its visual design, and the thinking behind its layout.">
-  <title>Behind the Portfolio | Website Documentation</title>
+  <meta name="description" content="Notes on how this portfolio website was made and why it looks the way it does.">
+  <title>Website Notes | Ben Finkelstein</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../landing.css">
   <link rel="stylesheet" href="website.css">
@@ -13,72 +13,28 @@
 <body>
   <main>
     <article class="active website-page">
-      <header class="website-hero">
-        <p class="eyebrow">Portfolio notes</p>
-        <h1>Behind the Website</h1>
-        <p class="hero-intro">A little about where this site came from, what I reused, and why it looks the way it does.</p>
-        <div class="hero-tags" aria-label="Page topics">
-          <span>Old portfolio, new purpose</span>
-          <span>Shared project repo</span>
-          <span>EdTech portfolio</span>
-        </div>
+      <header class="page-header">
+        <h1 class="h2 article-title">How I put this website together</h1>
       </header>
 
-      <section class="origin-section" aria-labelledby="origin-title">
-        <div class="section-title">
-          <p class="eyebrow">How it came together</p>
-          <h2 id="origin-title">A scrapped version got a second life</h2>
-        </div>
-        <div class="copy-panel">
-          <p>To create this page, I took an old HTML/CSS page I had for my old portfolio website from around 2024 (no longer active since i no longer work in that industry) That site went through like 4 different iterations before i landed on the final one, the one i am reusing here with some edits is an old scrapped version. I used my old sidebar script, which i converted to its own JS file a few weeks ago, tweaked the CSS to match the homepage, and the rest was history. The original homepage was made from scratch, with some assistance from Claude at the time. (I refuse to pay 20$ a month now!!!!)</p>
-          <p>I actually host all of my projects for this course on the same GitHub repo in order to already have them available to attach to this portfolio site with little effort.</p>
+      <section class="website-copy" aria-label="Website history">
+        <p>To create this page, I took an old HTML/CSS page I had for my old portfolio website from around 2024 (no longer active since i no longer work in that industry) That site went through like 4 different iterations before i landed on the final one, the one i am reusing here with some edits is an old scrapped version. I used my old sidebar script, which i converted to its own JS file a few weeks ago, tweaked the CSS to match the homepage, and the rest was history. The original homepage was made from scratch, with some assistance from Claude at the time. (I refuse to pay 20$ a month now!!!!)</p>
+        <p>I actually host all of my projects for this course on the same GitHub repo in order to already have them available to attach to this portfolio site with little effort.</p>
+      </section>
+
+      <section class="website-section" aria-labelledby="visual-title">
+        <h2 class="h3 article-title" id="visual-title">The design</h2>
+        <div class="website-copy">
+          <p>The site is mostly dark gray with blue accents. I kept those colors because they were already in the old version, and I like how links and headings stand out against the darker background. The font is Poppins; it was already part of the project and still works well for the headings and descriptions.</p>
+          <p>The sidebar keeps all the course pages in one place, which matters now that there are a lot of them. I’ve added thumbnails to the project list using images from the work itself, so you can get a quick idea of each project before opening it.</p>
         </div>
       </section>
 
-      <section class="design-section" aria-labelledby="design-title">
-        <div class="section-title">
-          <p class="eyebrow">Visual overview</p>
-          <h2 id="design-title">A familiar dark workspace</h2>
-          <p class="section-intro">The visual choices are meant to make the work easy to browse, while letting each project bring its own personality.</p>
-        </div>
-
-        <div class="design-grid">
-          <div class="design-card palette-card">
-            <div class="swatches" aria-label="Dark gray, medium gray, bright blue, and light blue color palette">
-              <span class="swatch swatch-dark"></span>
-              <span class="swatch swatch-panel"></span>
-              <span class="swatch swatch-blue"></span>
-              <span class="swatch swatch-light-blue"></span>
-            </div>
-            <h3>Dark gray and bright blue</h3>
-            <p>The colors borrow from the VS Code interface: deep gray surfaces with blue accents. I like the familiar feel, and the blue gives links and section details enough contrast to stand out.</p>
-          </div>
-
-          <div class="design-card">
-            <div class="layout-preview" aria-hidden="true">
-              <span class="preview-rail"></span>
-              <span class="preview-content"><i></i><i></i><i></i></span>
-            </div>
-            <h3>Sidebar stays handy</h3>
-            <p>The navigation sits in a sidebar so the different projects stay easy to reach as the portfolio grows. On smaller screens it shifts into a compact row of links.</p>
-          </div>
-
-          <div class="design-card">
-            <div class="type-preview" aria-hidden="true"><strong>Aa</strong><span>Clear headings<br>Readable project notes</span></div>
-            <h3>Simple type, distinct projects</h3>
-            <p>Poppins gives the site a little character, while the straightforward headings and card layouts keep the project descriptions readable. The work itself supplies most of the color and visual variety.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="reflection-section" aria-labelledby="reflection-title">
-        <div class="section-title">
-          <p class="eyebrow">Reflection</p>
-          <h2 id="reflection-title">Reuse, then make it feel like mine</h2>
-        </div>
-        <div class="copy-panel reflection-copy">
-          <p>Honestly, reusing the old site made this come together faster, but it still needed a fair bit of cleanup. The sidebar was already something I liked, so pulling it into its own JS file made it easy to use across pages instead of copying navigation everywhere. I kept the dark panels and bright blue highlights because they feel familiar to me from working in VS Code, and the contrast makes the text and links easy to pick out. The rounded cards give each project a clear home without making the page feel like a pile of raw links. The project images do most of the colorful work, so the interface can stay simple and let each piece be the focus.</p>
-          <p>Keeping the coursework in one GitHub repo has been convenient too. I can connect each project to the portfolio without moving it to another place or maintaining a separate site for every assignment. The portfolio is growing along with the work, and reusing the old structure lets me spend more time on what each project says and shows.</p>
+      <section class="website-section" aria-labelledby="reflection-title">
+        <h2 class="h3 article-title" id="reflection-title">Looking back</h2>
+        <div class="website-copy">
+          <p>Honestly, having an old version to reuse saved me time, but it still needed work. It wasn’t a finished template I could just drop in. I had to clean up the content, make the sidebar work across the pages, and change the styling to fit the projects I’m doing now. It was easier than starting over, and I still got to make it feel like my site.</p>
+          <p>Keeping the class projects in one GitHub repo has helped too. The files are already in the same place, so adding them to the portfolio is pretty straightforward. I don’t have to set up and maintain a separate site for each assignment.</p>
         </div>
       </section>
     </article>

@@ -25,6 +25,7 @@
         { label: 'Home', href: 'https://bfinkelsteinedu.carrd.co/', newTab: true },
         { label: 'Landing', href: '/' },
         { label: 'Website Documentation', href: '/website-documentation/' },
+        { label: 'Contact', href: '/contact/' },
         { label: 'Image projects', href: '/eme6208-project-1/' },
         { label: 'Gibbon Quiz', href: '/gibbon-quiz/' },
         { label: 'Drag & Drop - OG', href: '/drag-drop/' },
