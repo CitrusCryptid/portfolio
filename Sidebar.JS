@@ -32,7 +32,7 @@
         { label: 'Drag & Drop - AI Version', href: '/drag-ai/' },
         { label: 'Gibbons & Snoop Educational Video', href: '/gibbons-and-snoop/' },
         { label: 'Scapular Control Animation', href: '/scapular-control/' },
-        { label: 'Screencasts', href: '/Claude%20Code%20Screencast/' },
+        { label: 'Screencasts', href: '/screencasts/' },
         { label: 'Muscle Trainer Game', href: 'https://anatomy.bfmediasolutions.com' },
         ]
     };
