@@ -267,6 +267,10 @@ article.active {
     text-align: justify;
 }
 
+.about-text p + p {
+    margin-top: 1em;
+}
+
 /* Give each section heading the same space before its content. */
 .about > section > h3 { margin: 0 0 20px; }
 

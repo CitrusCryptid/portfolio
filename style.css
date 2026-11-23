@@ -56,3 +56,18 @@
   color: inherit;
   font: inherit;
 }
+
+/* Shared footer used on the landing page and every project page. */
+.site-footer {
+  width: min(1120px, calc(100% - 24px));
+  margin: 0 auto 24px;
+  padding: 16px 12px;
+  border-top: 1px solid #3c3c3c;
+  color: #cccccc;
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.site-footer p { margin: 0; }
+.site-footer a { color: #4fc1ff; text-underline-offset: 3px; }
