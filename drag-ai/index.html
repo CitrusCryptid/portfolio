@@ -159,6 +159,11 @@ zonesEl.addEventListener("click",e=>{
 document.getElementById("reset").addEventListener("click",newRound);
 newRound();
 </script>
+<section class="project-reflection" aria-labelledby="project-reflection-title">
+  <h2 id="project-reflection-title">Project Overview</h2>
+  <p>This AI-assisted instrument-sorting activity is shown alongside my hand-coded version. In the original, I started with the supplied HTML, CSS, and JavaScript, then revised the layout to center the content and improve contrast. Those changes disrupted dragging, so I reworked the script and styles until the activity had a cleaner interface and the instruments moved into the correct drop zones.</p>
+  <p>The fixes included increasing item spacing, recalculating drop-zone positions before each drag and after window resizing, and refining cursor-based drop detection and indicator placement. The key issue turned out to be in the HTML: the drag layer and drop indicator needed explicit inline positioning and display styles because the page stylesheet was not applying the needed positioning. Working through the problem helped me understand how layout, styling, and interaction code affect one another in an educational activity.</p>
+</section>
   <footer class="site-footer"><p><a href="https://education.ufl.edu/educational-technology/">University of Florida Educational Technology</a></p></footer>
 </body>
 </html>

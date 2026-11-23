@@ -4,6 +4,41 @@ body {
     font: 1.6rem/1.6 "Avenir Next", "Segoe UI", Arial, sans-serif;
     box-sizing: border-box;
 }
+
+.project-reflection {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  color: #f4f3e8;
+  background: rgba(20, 35, 22, .88);
+  border: 1px solid rgba(196, 220, 184, .55);
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-shadow: none;
+}
+
+.project-reflection h2 {
+  margin: 0 0 .75rem;
+  color: #c8e6a0;
+  font-size: 1.4rem;
+  text-shadow: none;
+}
+
+.project-reflection p {
+  margin: 0;
+}
+
+.project-reflection p + p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .project-reflection {
+    margin: 1.25rem 12px;
+    padding: 1rem;
+  }
+}
 .quiz-container,
 .quiz-container * {
   color: #f9f4f4;
