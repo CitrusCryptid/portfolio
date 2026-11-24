@@ -2,29 +2,63 @@
  * Global dark theme and formatting foundation.
  * Page-specific stylesheets load after this file and can replace these defaults.
  */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 /* Shared dark palette and type defaults available to every page. */
+
 :root {
-  color-scheme: dark; /* Keep native browser controls in the dark color scheme. */
-  --theme-bg: #1e1e1e; /* VS Code Dark+ editor background. */
-  --theme-text: #d4d4d4; /* VS Code default foreground text. */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* System type stack used unless a page overrides it. */
+  color-scheme: dark;
+  /* Keep native browser controls in the dark color scheme. */
+  --theme-bg: #1e1e1e;
+  /* VS Code Dark+ editor background. */
+  --theme-text: #d4d4d4;
+  /* VS Code default foreground text. */
+  --font-ui: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --type-display: clamp(2.25rem, 4vw, 3rem);
+  --type-page-title: clamp(1.9rem, 3.2vw, 2.5rem);
+  --type-section-title: clamp(1.35rem, 2.4vw, 1.75rem);
+  --type-card-title: 1.125rem;
+  --type-body: 1rem;
+  --type-small: .875rem;
+  --type-label: .75rem;
+  font-family: var(--font-ui);
 }
 
 /* Set the shared heading face and a layered shadow for more visual depth. */
+
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-family: var(--font-ui);
+  line-height: 1.25;
   text-shadow: 0 2px 0 rgba(0, 0, 0, .7), 0 5px 14px rgba(0, 0, 0, .55);
 }
 
+:where(h1) {
+  font-size: var(--type-page-title);
+  font-weight: 600;
+}
+
+:where(h2) {
+  font-size: var(--type-section-title);
+  font-weight: 600;
+}
+
+:where(h3) {
+  font-size: var(--type-card-title);
+  font-weight: 600;
+}
+
+:where(h4, h5, h6) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 /* Use border-box sizing as a low-specificity default for page elements. */
+
 :where(*, *::before, *::after) {
   box-sizing: border-box;
 }
 
 /* Provide a dark canvas and foreground as overridable document defaults. */
+
 :where(html) {
   min-height: 100%;
   background: var(--theme-bg);
@@ -32,67 +66,138 @@
 }
 
 /* Set shared body spacing, colors, and typography without outranking page CSS. */
+
 :where(body) {
   min-height: 100vh;
   margin: 0;
   background: var(--theme-bg);
   color: var(--theme-text);
-  font-family: inherit;
-  line-height: 1.5;
+  font-family: var(--font-ui);
+  font-size: var(--type-body);
+  line-height: 1.65;
 }
 
 /* Prevent media from overflowing its containing block by default. */
+
 :where(img, svg, video, canvas) {
   max-width: 100%;
 }
 
 /* Let links inherit their surrounding text color unless a page styles them. */
+
 :where(a) {
   color: inherit;
 }
 
 /* Give form controls the page's type and text color unless locally overridden. */
+
 :where(button, input, select, textarea) {
   color: inherit;
   font: inherit;
 }
 
 /* Shared footer used on the landing page and every project page. */
+
 .site-footer {
   width: min(1120px, calc(100% - 24px));
-  margin: 0 auto 24px;
-  padding: 16px 12px;
+  margin: 0 auto 28px;
+  padding: 18px 12px;
   border-top: 1px solid #3c3c3c;
   color: #cccccc;
   text-align: center;
-  font-size: .9rem;
+  font-family: var(--font-ui);
+  font-size: var(--type-small);
   line-height: 1.6;
 }
 
-.site-footer p { margin: 0; }
-.site-footer a { color: #4fc1ff; text-underline-offset: 3px; }
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: #4fc1ff;
+  text-underline-offset: 3px;
+}
 
 .project-reflection {
-  width: min(900px, calc(100% - 24px));
+  width: min(1120px, calc(100% - 24px));
   margin: 32px auto;
-  padding: 24px;
-  color: #f4f3e8;
-  background: rgba(30, 30, 30, .92);
-  border: 1px solid #64735c;
-  border-radius: 12px;
-  font-size: 1rem;
-  line-height: 1.7;
+  padding: clamp(20px, 3vw, 32px);
+  color: var(--theme-text);
+  background: linear-gradient(135deg, rgba(60, 60, 60, .25), transparent), #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 16px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, .18);
+  font-family: var(--font-ui);
+  font-size: var(--type-body);
+  line-height: 1.75;
 }
 
 .project-reflection h2 {
-  margin: 0 0 12px;
-  color: #c8e6a0;
-  font-size: 1.4rem;
+  margin: 0 0 16px;
+  color: #d4d4d4;
+  font-size: var(--type-section-title);
 }
 
-.project-reflection p { margin: 0; }
-.project-reflection p + p { margin-top: 1rem; }
+.project-reflection p {
+  margin: 0;
+}
+
+.project-reflection p + p {
+  margin-top: 1rem;
+}
+
+.brand-kicker {
+  color: #4fc1ff;
+  font-size: var(--type-label);
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.portfolio-button,
+.about .project-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: .7rem 1rem;
+  border: 1px solid #4fc1ff;
+  border-radius: 9px;
+  background: #007acc;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.portfolio-button:hover,
+.about .project-link:hover {
+  border-color: #8bd7ff;
+  background: #0062a3;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.portfolio-button:focus-visible,
+.about .project-link:focus-visible {
+  outline: 3px solid #8bd7ff;
+  outline-offset: 3px;
+}
 
 @media (max-width: 600px) {
-  .project-reflection { padding: 16px; }
+  .project-reflection {
+    padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-button,
+  .about .project-link {
+    transition: none;
+  }
 }

@@ -20,21 +20,169 @@
   border-radius: 10px;
 }
 
-.assignment-text {
-  margin: 0;
-  padding: clamp(16px, 3vw, 32px);
+.gibbons-header {
+  margin: 28px 0;
+  padding: clamp(22px, 4vw, 38px);
   border: 1px solid var(--jet);
-  border-radius: 16px;
-  background: var(--bg-gradient-jet);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(0, 122, 204, .12), transparent 68%), #252526;
+}
+
+.gibbons-header h1 {
+  max-width: 800px;
+  margin: 8px 0 12px;
+  font-size: var(--type-page-title);
+}
+
+.gibbons-lead,
+.gibbons-section-heading > p:last-child {
+  max-width: 75ch;
+  margin: 0;
   color: var(--light-gray);
-  font: inherit;
   line-height: 1.75;
-  white-space: pre-wrap;
+}
+
+.gibbons-section {
+  margin-top: clamp(36px, 6vw, 58px);
+}
+
+.gibbons-section-heading {
+  margin-bottom: 18px;
+}
+
+.gibbons-section-heading h2 {
+  margin: 6px 0 10px;
+}
+
+.gibbons-section-heading h3 {
+  margin: 24px 0 10px;
+}
+
+.gibbons-disclosure {
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  background: var(--bg-gradient-jet);
+}
+
+.gibbons-disclosure summary {
+  position: relative;
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  padding: 14px 52px 14px 18px;
+  color: #fff;
+  background: #007acc;
+  border-bottom: 1px solid rgba(79, 193, 255, .65);
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  list-style: none;
+}
+
+.gibbons-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.gibbons-disclosure summary::after {
+  content: '+';
+  position: absolute;
+  right: 18px;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.gibbons-disclosure[open] summary::after {
+  content: '−';
+}
+
+.gibbons-disclosure summary:hover {
+  background: #0062a3;
+}
+
+.gibbons-disclosure summary:focus-visible {
+  outline: 3px solid #8bd7ff;
+  outline-offset: -4px;
+}
+
+.disclosure-content,
+.script-content {
+  padding: clamp(18px, 3vw, 28px);
+  color: var(--light-gray);
+  line-height: 1.75;
+}
+
+.disclosure-content h3,
+.script-content h3 {
+  margin: 24px 0 8px;
+  font-size: 1.05rem;
+}
+
+.disclosure-content h3:first-child,
+.script-content section:first-child h3 {
+  margin-top: 0;
+}
+
+.disclosure-content p {
+  margin: 0 0 12px;
+}
+
+.disclosure-content ol,
+.disclosure-content ul,
+.gibbons-references {
+  margin: 8px 0 18px;
+  padding-left: 1.4rem;
+}
+
+.disclosure-content li,
+.gibbons-references li {
+  padding-left: .2rem;
+}
+
+.disclosure-content li + li,
+.gibbons-references li + li {
+  margin-top: 8px;
+}
+
+.disclosure-content a,
+.gibbons-references a {
+  color: #4fc1ff;
   overflow-wrap: anywhere;
 }
 
+.script-content section + section {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--jet);
+}
+
+.script-content section h3 {
+  color: #4fc1ff;
+}
+
+.script-content p {
+  max-width: 78ch;
+  margin: 0;
+}
+
+.snoop-script p + p {
+  margin-top: 16px;
+}
+
+.gibbons-references {
+  margin: 0;
+}
+
 @media (max-width: 600px) {
-  .gibbons-page { margin-top: 8px; padding: 8px; }
-  .video-player { padding: 6px; border-radius: 12px; }
-  .assignment-text { padding: 15px; }
+  .gibbons-page {
+    width: 100%;
+  }
+  .gibbons-header {
+    margin: 18px 0;
+  }
+  .gibbons-disclosure summary {
+    padding-left: 14px;
+  }
 }

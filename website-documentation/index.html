@@ -1,51 +1,94 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Notes on how this portfolio website was made and why it looks the way it does.">
-  <title>Website Notes | Ben Finkelstein</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../landing.css">
-  <link rel="stylesheet" href="website.css">
-  <script src="../Sidebar.JS" defer></script>
-</head>
-<body>
-  <main>
-    <article class="active website-page">
-      <header class="page-header">
-        <h1 class="h2 article-title">How I put this website together</h1>
-      </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes on how this portfolio website was made and why it looks the way it does.">
+    <title>Website Notes | Ben Finkelstein</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../landing.css">
+    <link rel="stylesheet" href="website.css">
+    <script src="../Sidebar.JS" defer></script>
+  </head>
+  <body>
+    <main>
+      <article class="active website-page">
+        <header class="page-header">
+          <h1 class="h2 article-title">How I put this website together</h1>
+        </header>
 
-      <section class="website-copy" aria-label="Website history">
-        <p>To create this page, I took an old HTML/CSS page I had for my old portfolio website from around 2024 (no longer active since i no longer work in that industry) That site went through like 4 different iterations before i landed on the final one, the one i am reusing here with some edits is an old scrapped version. I used my old sidebar script, which i converted to its own JS file a few weeks ago, tweaked the CSS to match the homepage, and the rest was history. The original homepage was made from scratch, with some assistance from Claude at the time. (I refuse to pay 20$ a month now!!!!)</p>
-        <p>I actually host all of my projects for this course on the same GitHub repo in order to already have them available to attach to this portfolio site with little effort.</p>
-      </section>
+        <section class="website-copy" aria-label="Website history">
+          <p>To put this site together, I started with an old HTML/CSS portfolio page from around 2024. I don’t use that portfolio anymore because I no longer work in that industry. The site went through about four iterations; the version I reused here was one I had scrapped.</p>
+          <p>I brought back my old sidebar script—which I had moved into its own JS file a few weeks ago—and adjusted the CSS to fit the homepage. The homepage itself was made from scratch, with some help from Claude. (I refuse to pay $20 a month now!)</p>
+          <p>I actually host all of my projects for this course on the same GitHub repo in order to already have them available to attach to this portfolio site with little effort.</p>
+        </section>
 
-      <section class="website-section" aria-labelledby="visual-title">
-        <h2 class="h3 article-title" id="visual-title">The design</h2>
-        <div class="website-copy">
-          <p>The site is mostly dark gray with blue accents. I kept those colors because they were already in the old version, and I like how links and headings stand out against the darker background. The font is Poppins; it was already part of the project and still works well for the headings and descriptions.</p>
-          <p>The sidebar keeps all the course pages in one place, which matters now that there are a lot of them. I’ve added thumbnails to the project list using images from the work itself, so you can get a quick idea of each project before opening it.</p>
-        </div>
-        <ul class="color-palette" aria-label="Portfolio website color palette">
-          <li><span class="color-chip color-background"></span><span>Background <code>#1E1E1E</code></span></li>
-          <li><span class="color-chip color-panel"></span><span>Panels <code>#252526</code></span></li>
-          <li><span class="color-chip color-border"></span><span>Borders <code>#3C3C3C</code></span></li>
-          <li><span class="color-chip color-accent"></span><span>Accent blue <code>#007ACC</code></span></li>
-          <li><span class="color-chip color-highlight"></span><span>Light blue <code>#4FC1FF</code></span></li>
-        </ul>
-      </section>
+        <section class="website-section" aria-labelledby="visual-title">
+          <h2 class="h3 article-title" id="visual-title">The design</h2>
+          <div class="website-copy">
+            <p>The site is mostly dark gray with blue accents. I kept those colors because they were already in the old version, and I like how links and headings stand out against the darker background. The font is Poppins; it was already part of the project and still works well for the headings and descriptions.</p>
+            <p>The sidebar keeps all the course pages in one place, which matters now that there are a lot of them. I’ve added thumbnails to the project list using images from the work itself, so you can get a quick idea of each project before opening it.</p>
+          </div>
+          <ul class="color-palette" aria-label="Portfolio website color palette">
+            <li><span class="color-chip color-background"></span><span>Background <code>#1E1E1E</code></span></li>
+            <li><span class="color-chip color-panel"></span><span>Panels <code>#252526</code></span></li>
+            <li><span class="color-chip color-border"></span><span>Borders <code>#3C3C3C</code></span></li>
+            <li><span class="color-chip color-accent"></span><span>Accent blue <code>#007ACC</code></span></li>
+            <li><span class="color-chip color-highlight"></span><span>Light blue <code>#4FC1FF</code></span></li>
+          </ul>
+        </section>
 
-      <section class="website-section" aria-labelledby="reflection-title">
-        <h2 class="h3 article-title" id="reflection-title">Looking back</h2>
-        <div class="website-copy">
-          <p>Honestly, having an old version to reuse saved me time, but it still needed work. It wasn’t a finished template I could just drop in. I had to clean up the content, make the sidebar work across the pages, and change the styling to fit the projects I’m doing now. It was easier than starting over, and I still got to make it feel like my site.</p>
-          <p>Keeping the class projects in one GitHub repo has helped too. The files are already in the same place, so adding them to the portfolio is pretty straightforward. I don’t have to set up and maintain a separate site for each assignment.</p>
-        </div>
-      </section>
-    </article>
-  </main>
-  <footer class="site-footer"><p><a href="https://education.ufl.edu/educational-technology/">University of Florida Educational Technology</a></p></footer>
-</body>
+        <section class="website-section brand-guide" aria-labelledby="type-title">
+          <h2 class="h3 article-title" id="type-title">Type and interface guide</h2>
+          <div class="website-copy">
+            <p>The homepage uses Poppins throughout. I’m keeping that as the site’s typeface so headings, project notes, and the shared footer feel like they belong together. The system sans-serif stack is the fallback if Poppins doesn’t load.</p>
+          </div>
+          <div class="type-specimens">
+            <div class="type-specimen">
+                <p class="type-label">Display name · 36–48 px · semibold</p>
+                <p class="type-display-sample">Ben Finkelstein</p>
+                <p class="type-note">Reserved for the name at the top of the homepage.</p>
+              </div>
+              <div class="type-specimen">
+                <p class="type-label">Page title · 30–40 px · semibold</p>
+                <p class="type-page-sample">A clear page title</p>
+              <p class="type-note">Used once at the start of a page to name its subject.</p>
+            </div>
+            <div class="type-specimen">
+              <p class="type-label">Section heading · 22–28 px · semibold</p>
+              <p class="type-section-sample">A section heading</p>
+              <p class="type-note">Introduces a major part of a project page or the resume.</p>
+            </div>
+            <div class="type-specimen">
+              <p class="type-label">Card heading · 18 px · semibold</p>
+              <p class="type-card-sample">A project card title</p>
+              <p class="type-note">Names a project or a smaller content group.</p>
+            </div>
+            <div class="type-specimen">
+              <p class="type-label">Body · 16 px · regular</p>
+              <p class="type-body-sample">Body text stays left aligned with generous line spacing so project details are comfortable to read.</p>
+              <p class="type-note">Used for paragraphs, overviews, and the shared footer.</p>
+            </div>
+            <div class="type-specimen">
+              <p class="type-label">Small label · 12 px · medium</p>
+              <p class="type-small-sample">PROJECT NOTES · METADATA</p>
+              <p class="type-note">Reserved for short labels and supporting details.</p>
+            </div>
+          </div>
+          <div class="website-copy brand-button-note">
+            <p>Links that open a project are styled as buttons: blue fill, light-blue outline, white text, and a visible keyboard-focus ring. Interactive controls inside the quizzes keep their own styling so the activities still feel like standalone tools.</p>
+          </div>
+        </section>
+
+        <section class="website-section" aria-labelledby="reflection-title">
+          <h2 class="h3 article-title" id="reflection-title">Looking back</h2>
+          <div class="website-copy">
+            <p>Honestly, having an old version to reuse saved me time, but it still needed work. It wasn’t a finished template I could just drop in. I had to clean up the content, make the sidebar work across the pages, and change the styling to fit the projects I’m doing now. It was easier than starting over, and I still got to make it feel like my site.</p>
+            <p>Keeping the class projects in one GitHub repo has helped too. The files are already in the same place, so adding them to the portfolio is pretty straightforward. I don’t have to set up and maintain a separate site for each assignment.</p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="site-footer"><p><a href="https://education.ufl.edu/educational-technology/">University of Florida Educational Technology</a></p></footer>
+  </body>
 </html>

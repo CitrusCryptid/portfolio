@@ -38,7 +38,7 @@
 
 .animation-header h1 {
   margin: 0 0 10px;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--type-page-title, 2.5rem);
 }
 
 .lead,
@@ -48,7 +48,10 @@
   line-height: 1.75;
 }
 
-.lead { margin: 0; font-size: 1.05rem; }
+.lead {
+  margin: 0;
+  font-size: 1.05rem;
+}
 
 .video-facts {
   display: flex;
@@ -66,10 +69,22 @@
   font-size: .82rem;
 }
 
-.content-section { margin-top: clamp(38px, 6vw, 64px); }
-.section-heading { margin-bottom: 18px; }
-.section-heading h2 { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); }
-.section-intro { margin: 10px 0 0; }
+.content-section {
+  margin-top: clamp(38px, 6vw, 64px);
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: var(--type-section-title, 1.75rem);
+}
+
+.section-intro {
+  margin: 10px 0 0;
+}
 
 .content-card,
 .prompt-card,
@@ -82,9 +97,18 @@
   color: var(--light-gray, #ccc);
 }
 
-.content-card { padding: clamp(18px, 3vw, 30px); }
-.content-card p { margin: 0; line-height: 1.8; }
-.content-card p + p { margin-top: 16px; }
+.content-card {
+  padding: clamp(18px, 3vw, 30px);
+}
+
+.content-card p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.content-card p + p {
+  margin-top: 16px;
+}
 
 .prompt-card {
   margin: 0;
@@ -110,10 +134,26 @@
   padding: clamp(18px, 3vw, 30px) clamp(22px, 4vw, 42px);
 }
 
-.script-list li { padding: 12px 0; }
-.script-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
-.script-list time { display: block; color: var(--vegas-gold, #4fc1ff); font-weight: 600; font-size: .9rem; }
-.script-list span { display: block; margin-top: 4px; line-height: 1.65; }
+.script-list li {
+  padding: 12px 0;
+}
+
+.script-list li + li {
+  border-top: 1px solid var(--jet, #3c3c3c);
+}
+
+.script-list time {
+  display: block;
+  color: var(--vegas-gold, #4fc1ff);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.script-list span {
+  display: block;
+  margin-top: 4px;
+  line-height: 1.65;
+}
 
 .storyboard-figure {
   overflow: hidden;
@@ -123,18 +163,52 @@
   background: #061426;
 }
 
-.storyboard-figure img { display: block; width: 100%; }
-.storyboard-figure figcaption { padding: 11px 16px; color: var(--light-gray, #ccc); font-size: .85rem; }
-.storyboard-list li { padding: 11px 0; line-height: 1.75; }
-.storyboard-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
-.storyboard-list strong { color: var(--white2, #d4d4d4); }
+.storyboard-figure img {
+  display: block;
+  width: 100%;
+}
 
-.accuracy-notes { border-left: 3px solid var(--orange-yellow-crayola, #007acc); }
-.essay-copy p + p { margin-top: 18px; }
+.storyboard-figure figcaption {
+  padding: 11px 16px;
+  color: var(--light-gray, #ccc);
+  font-size: .85rem;
+}
 
-.reference-list li { padding: 12px 0; line-height: 1.75; overflow-wrap: anywhere; }
-.reference-list li + li { border-top: 1px solid var(--jet, #3c3c3c); }
-.reference-list a { color: var(--vegas-gold, #4fc1ff); text-underline-offset: 3px; }
+.storyboard-list li {
+  padding: 11px 0;
+  line-height: 1.75;
+}
+
+.storyboard-list li + li {
+  border-top: 1px solid var(--jet, #3c3c3c);
+}
+
+.storyboard-list strong {
+  color: var(--white2, #d4d4d4);
+}
+
+.accuracy-notes {
+  border-left: 3px solid var(--orange-yellow-crayola, #007acc);
+}
+
+.essay-copy p + p {
+  margin-top: 18px;
+}
+
+.reference-list li {
+  padding: 12px 0;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.reference-list li + li {
+  border-top: 1px solid var(--jet, #3c3c3c);
+}
+
+.reference-list a {
+  color: var(--vegas-gold, #4fc1ff);
+  text-underline-offset: 3px;
+}
 
 .original-files {
   display: flex;
@@ -146,12 +220,30 @@
   border-top: 1px solid var(--jet, #3c3c3c);
 }
 
-.original-files h2 { width: 100%; margin: 0; font-size: 1.1rem; }
-.original-files a { color: var(--vegas-gold, #4fc1ff); text-underline-offset: 3px; }
+.original-files h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.original-files a:not(.portfolio-button) {
+  color: var(--vegas-gold, #4fc1ff);
+  text-underline-offset: 3px;
+}
 
 @media (max-width: 600px) {
-  .animation-page { margin-top: 8px; padding: 8px; }
-  .video-player { padding: 6px; border-radius: 12px; }
-  .animation-header { padding: 20px; }
-  .script-list, .storyboard-list, .reference-list { padding: 16px 24px; }
+  .animation-page {
+    margin-top: 8px;
+    padding: 8px;
+  }
+  .video-player {
+    padding: 6px;
+    border-radius: 12px;
+  }
+  .animation-header {
+    padding: 20px;
+  }
+  .script-list, .storyboard-list, .reference-list {
+    padding: 16px 24px;
+  }
 }

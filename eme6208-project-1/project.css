@@ -33,7 +33,7 @@
 
 .hero-copy h1 {
   margin: 0 0 16px;
-  font-size: clamp(2rem, 4.5vw, 3.35rem);
+  font-size: var(--type-page-title, 2.5rem);
   line-height: 1.12;
 }
 
@@ -56,7 +56,7 @@
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-size: var(--type-section-title, 1.75rem);
 }
 
 .cover-grid {
@@ -132,12 +132,26 @@
 }
 
 @media (max-width: 700px) {
-  .project-page { margin-top: 8px; padding: 10px; }
-  .project-hero { grid-template-columns: 1fr; padding: 22px; gap: 20px; }
-  .portfolio-logo { width: min(100%, 360px); margin: 0 auto; }
+  .project-page {
+    margin-top: 8px;
+    padding: 10px;
+  }
+  .project-hero {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    gap: 20px;
+  }
+  .portfolio-logo {
+    width: min(100%, 360px);
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 540px) {
-  .cover-grid { grid-template-columns: 1fr; }
-  .cover-card img { max-height: none; }
+  .cover-grid {
+    grid-template-columns: 1fr;
+  }
+  .cover-card img {
+    max-height: none;
+  }
 }
